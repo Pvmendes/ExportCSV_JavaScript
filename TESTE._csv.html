@@ -1,0 +1,17 @@
+<html>
+<body>
+<a href="" id="linkDownload" download="arquivo.csv">Download</a>
+
+<script>
+
+var conteudo = '1;Paulo;Larissa;\n2;Larissa;Paulo';
+
+
+document.getElementById('linkDownload').onclick = function() {
+            this.href = 'data:text/plain;charset=utf-8,'
+		+ encodeURIComponent(conteudo );
+};
+
+</script>
+</body>
+</html>
